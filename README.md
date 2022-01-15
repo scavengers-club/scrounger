@@ -7,7 +7,7 @@ Users of this app will be going on outdoor adventures seeking beautiful views ar
 ## Our Team :
 
 - Jordan :doughnut:
-- Violet :cowboy-hat-face:
+- Violet :cowboy_hat_face:
 - Noah :hot_pepper:
 - Bailey :parrot:
 
