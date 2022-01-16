@@ -1,4 +1,4 @@
-# Welcome to Scrounge
+# Welcome to Scrounger
 
 Our App encourages users to explore and solve puzzles that lead to real-world adventures and shared experiences.
 
