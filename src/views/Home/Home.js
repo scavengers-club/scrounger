@@ -14,5 +14,21 @@ export default function Home() {
     fetchData();
   }, []);
   console.log(adventures);
-  return <div></div>;
+  return (
+    <div>
+      <h2>Scrounger</h2>
+      <p>
+        This is a description of the app for those who do not have an account or are not logged in
+        to see
+      </p>
+      <div className="adventure-list">
+        {adventures.map((adventure) => (
+          <div key={adventure.id}>
+            <h3>{adventure.name}</h3>
+            <img src={adventure.image}></img>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
