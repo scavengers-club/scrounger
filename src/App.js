@@ -9,6 +9,7 @@ import Create from './views/Create/Create';
 import Edit from './views/Edit/Edit';
 import { getUser } from './services/users';
 import { useState } from 'react';
+import ScoutsHonor from './components/ScoutsHonor/ScoutsHonor';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
@@ -46,6 +47,9 @@ function App() {
           </Route>
           <Route exact path="/adventure/:id/edit">
             <Edit />
+          </Route>
+          <Route exact path="/scoutshonor">
+            <ScoutsHonor />
           </Route>
         </Switch>
       </BrowserRouter>
