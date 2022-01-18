@@ -7,8 +7,12 @@ import Profile from './views/Profile/Profile';
 import Adventure from './views/Adventure/Adventure';
 import Create from './views/Create/Create';
 import Edit from './views/Edit/Edit';
+import { getUser } from './services/users';
+import { useState } from 'react';
 
 function App() {
+  const [currentUser, setCurrentUser] = useState(getUser());
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -26,10 +30,10 @@ function App() {
             <Home />
           </Route>
           <Route exact path="/register">
-            <Register />
+            <Register setCurrentUser={setCurrentUser} />
           </Route>
           <Route exact path="/login">
-            <LogIn />
+            <LogIn setCurrentUser={setCurrentUser} />
           </Route>
           <Route exact path="/user/:id">
             <Profile />
