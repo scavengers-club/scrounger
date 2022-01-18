@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Profile() {
+export default function Register() {
   return (
     <div>
-      <h1>Hi I am Profile</h1>
+      <h1>Register</h1>
     </div>
   );
 }
