@@ -4,9 +4,13 @@ export function getUser() {
   return client.auth.session();
 }
 
-export async function registerUser(email, password) {
+export async function registerUser(email, password, username) {
   const { user, error } = await client.auth.signUp({ email, password });
   if (error) {
+    throw error;
+  }
+  const resp = await client.from('profiles').insert({ id: user.id, username }).single();
+  if (resp.error) {
     throw error;
   }
   return user;

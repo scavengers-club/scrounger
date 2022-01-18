@@ -4,5 +4,9 @@ import React from 'react';
 //will prompt user to agree to basic terms and conitions, verify age, etc
 
 export default function ScoutsHonor() {
-  return <div></div>;
+  return (
+    <div>
+      <p>here are all the guidlines we want you to follow</p>
+    </div>
+  );
 }
