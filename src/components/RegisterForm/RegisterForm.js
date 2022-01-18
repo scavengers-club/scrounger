@@ -22,10 +22,10 @@ export default function RegisterForm() {
           password:
           <input type="password" />
         </label>
-        <label>
+        {/* <label>
           re-enter password:
           <input type="password" />
-        </label>
+        </label> */}
         <label>
           <input type="checkbox" />I am over the age of 13
         </label>
