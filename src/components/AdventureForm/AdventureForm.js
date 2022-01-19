@@ -4,5 +4,29 @@ import React from 'react';
 //and also called when a user clicks to edit their adventure(filled with specific info)
 
 export default function AdventureForm() {
-  return <div></div>;
+  return (
+    <form>
+      <label>
+        <input type="text" placeholder="name" />
+      </label>
+      <label>
+        <input type="text" placeholder="image" />
+      </label>
+      <label>
+        <input type="text" placeholder="description" />
+      </label>
+      <label>
+        <input type="text" placeholder="hint 1" />
+      </label>
+      <label>
+        <input type="text" placeholder="hint 2" />
+      </label>
+      <label>
+        <input type="text" placeholder="hint 3" />
+      </label>
+      <label>
+        <input type="text" placeholder="solution" />
+      </label>
+    </form>
+  );
 }
