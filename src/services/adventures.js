@@ -11,7 +11,7 @@ export async function getAdventureById(id) {
 }
 
 export async function createAdventure(adventure) {
-  const resp = await client.from('adventures').insert(adventure);
+  const resp = await client.from('adventures').insert([adventure]);
   return checkError(resp);
 }
 

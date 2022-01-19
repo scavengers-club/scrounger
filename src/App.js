@@ -47,14 +47,14 @@ function App() {
             <Profile {...{ currentUser }} />
           </ProtectedRoute>
 
-          <ProtectedRoute exact path="/adventure/:id" {...{ currentUser }}>
-            <Adventure {...{ currentUser }} />
-          </ProtectedRoute>
           <ProtectedRoute exact path="/adventure/create" {...{ currentUser }}>
             <Create {...{ currentUser }} />
           </ProtectedRoute>
           <ProtectedRoute exact path="/adventure/:id/edit" {...{ currentUser }}>
             <Edit {...{ currentUser }} />
+          </ProtectedRoute>
+          <ProtectedRoute exact path="/adventure/:id" {...{ currentUser }}>
+            <Adventure {...{ currentUser }} />
           </ProtectedRoute>
 
           <Route exact path="/scoutshonor">
