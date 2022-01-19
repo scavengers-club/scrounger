@@ -15,6 +15,8 @@ export default function Home({ currentUser }) {
     fetchData();
   }, []);
 
+  if (loading) return <h1>grabbing adventures...</h1>;
+
   return (
     <div>
       {!currentUser && (
