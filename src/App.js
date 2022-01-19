@@ -15,15 +15,16 @@ import Header from './views/Header/Header';
 ``;
 
 function App() {
-  const [currentUser, setCurrentUser] = useState(null);
   const avatars = [`christmas-hat.png`, `feather-hat.png`, `fedora-hat.png`, `winter-hat.png`];
 
+  const [currentUser, setCurrentUser] = useState(null);
+
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchUser = async () => {
       const user = await getUser();
       setCurrentUser(user);
     };
-    fetchData();
+    fetchUser();
   }, []);
 
   return (
@@ -32,7 +33,8 @@ function App() {
         <Header {...{ currentUser, setCurrentUser }} />
         <Switch>
           <Route exact path="/">
-            <Home {...{ currentUser }} />
+            {currentUser && <Home {...{ currentUser }} />}
+            {!currentUser && <div>banana</div>}
           </Route>
           <Route exact path="/register">
             <Register setCurrentUser={setCurrentUser} avatars={avatars} />

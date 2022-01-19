@@ -6,6 +6,7 @@ import { getAdventureById } from '../../services/adventures';
 export default function Adventure() {
   const [adventure, setAdventure] = useState({});
   const { id } = useParams();
+
   useEffect(() => {
     const fetchData = async () => {
       const resp = await getAdventureById(id);
@@ -13,5 +14,6 @@ export default function Adventure() {
     };
     fetchData();
   }, [id]);
+
   return <AdventureDetail {...adventure} />;
 }
