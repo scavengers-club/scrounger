@@ -8,11 +8,11 @@ import { createAdventure } from '../../services/adventures';
 export default function Create({ currentUser }) {
   const [adventure, setAdventure] = useState({});
   const history = useHistory();
-  const id = currentUser.id;
+  const userId = currentUser.id;
 
   const updateAdventure = (key, value) => {
     adventure[key] = value;
-    setAdventure({ ...adventure, user_id: id });
+    setAdventure({ ...adventure, user_id: userId });
   };
 
   const handleSubmit = async (e) => {

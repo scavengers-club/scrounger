@@ -33,8 +33,7 @@ function App() {
         <Header {...{ currentUser, setCurrentUser }} />
         <Switch>
           <Route exact path="/">
-            {currentUser && <Home {...{ currentUser }} />}
-            {!currentUser && <div>banana</div>}
+            <Home {...{ currentUser }} />
           </Route>
           <Route exact path="/register">
             <Register setCurrentUser={setCurrentUser} avatars={avatars} />
@@ -43,9 +42,9 @@ function App() {
             <LogIn setCurrentUser={setCurrentUser} />
           </Route>
 
-          <ProtectedRoute exact path="/user/:id" {...{ currentUser }}>
+          <Route exact path="/user/:id" {...{ currentUser }}>
             <Profile {...{ currentUser }} />
-          </ProtectedRoute>
+          </Route>
 
           <ProtectedRoute exact path="/adventure/create" {...{ currentUser }}>
             <Create {...{ currentUser }} />
