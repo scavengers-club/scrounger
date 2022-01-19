@@ -1,28 +1,31 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { logOut } from '../../services/users';
+import home from '../../navIcons/home.png';
+import profile from '../../navIcons/profile.png';
+import logout from '../../navIcons/logout.png';
 
 export default function Header({ currentUser, setCurrentUser }) {
   const logOutUser = async () => {
     await logOut();
     setCurrentUser(null);
   };
+
   return (
     <header>
+      <NavLink exact to="/">
+        <img src={home}></img>
+      </NavLink>
       {currentUser && (
         <>
-          <NavLink exact to="/">
-            Home
+          <NavLink to="/user/:id">
+            <img src={profile}></img>
           </NavLink>
-          <NavLink to="/user/:id">Profile</NavLink>
-          <button onClick={logOutUser}>Log Out</button>
+          <img src={logout} onClick={logOutUser}></img>
         </>
       )}
       {!currentUser && (
         <>
-          <NavLink exact to="/">
-            Home
-          </NavLink>
           <NavLink to="/register">Register</NavLink>
           <NavLink to="/login">Log In</NavLink>
         </>
