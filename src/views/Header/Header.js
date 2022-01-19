@@ -7,8 +7,10 @@ import logout from '../../navIcons/logout.png';
 
 export default function Header({ currentUser, setCurrentUser }) {
   const logOutUser = async () => {
-    await logOut();
-    setCurrentUser(null);
+    if (confirm('are you sure you want to logout?') === true) {
+      await logOut();
+      setCurrentUser(null);
+    }
   };
 
   return (
