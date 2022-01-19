@@ -10,7 +10,7 @@ export default function AdventureList({ adventures }) {
         <div key={adventure.id}>
           <Link to={`/adventure/${adventure.id}`}>
             <h3>{adventure.name}</h3>
-            <img src={adventure.image} />
+            <img width="400px" src={adventure.image} />
           </Link>
         </div>
       ))}

@@ -10,6 +10,7 @@ import Edit from './views/Edit/Edit';
 import { getUser } from './services/users';
 import { useState } from 'react';
 import ScoutsHonor from './components/ScoutsHonor/ScoutsHonor';
+import ProtectedRoute from './utils/ProtectedRoute';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
@@ -36,18 +37,20 @@ function App() {
           <Route exact path="/login">
             <LogIn setCurrentUser={setCurrentUser} />
           </Route>
-          <Route exact path="/user/:id">
-            <Profile />
-          </Route>
-          <Route exact path="/adventure/:id">
-            <Adventure />
-          </Route>
-          <Route exact path="/adventure/create">
-            <Create />
-          </Route>
-          <Route exact path="/adventure/:id/edit">
-            <Edit />
-          </Route>
+
+          <ProtectedRoute exact path="/user/:id" {...{ currentUser }}>
+            <Profile {...{ currentUser }} />
+          </ProtectedRoute>
+          <ProtectedRoute exact path="/adventure/:id" {...{ currentUser }}>
+            <Adventure {...{ currentUser }} />
+          </ProtectedRoute>
+          <ProtectedRoute exact path="/adventure/create" {...{ currentUser }}>
+            <Create {...{ currentUser }} />
+          </ProtectedRoute>
+          <ProtectedRoute exact path="/adventure/:id/edit" {...{ currentUser }}>
+            <Edit {...{ currentUser }} />
+          </ProtectedRoute>
+
           <Route exact path="/scoutshonor">
             <ScoutsHonor />
           </Route>
