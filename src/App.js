@@ -10,6 +10,7 @@ import Edit from './views/Edit/Edit';
 import { getUser } from './services/users';
 import { useState } from 'react';
 import ScoutsHonor from './components/ScoutsHonor/ScoutsHonor';
+import Header from './views/Header/Header';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
@@ -17,15 +18,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <header>
-          <NavLink exact to="/">
-            Home
-          </NavLink>
-          <NavLink to="/register">Register</NavLink>
-          <NavLink to="/login">Log In</NavLink>
-          <NavLink to="/user/:id">Profile</NavLink>
-          <button>Log Out</button>
-        </header>
+        <Header {...{ currentUser, setCurrentUser }} />
         <Switch>
           <Route exact path="/">
             <Home {...{ currentUser }} />
