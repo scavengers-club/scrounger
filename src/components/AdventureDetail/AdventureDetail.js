@@ -11,6 +11,8 @@ export default function AdventureDetail({
   hint_2,
   hint_3,
   solution,
+  handleEdit,
+  handleDelete,
 }) {
   return (
     <div>
@@ -24,8 +26,8 @@ export default function AdventureDetail({
       </ol>
       <h3>{solution}</h3>
 
-      <button>Edit</button>
-      <button>Delete</button>
+      <button onClick={handleEdit}>Edit</button>
+      <button onClick={handleDelete}>Delete</button>
     </div>
   );
 }
