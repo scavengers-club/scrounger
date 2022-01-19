@@ -10,6 +10,11 @@ export async function getAdventureById(id) {
   return checkError(resp);
 }
 
+export async function createAdventure(adventure) {
+  const resp = await client.from('adventures').insert(adventure);
+  return checkError(resp);
+}
+
 export async function uploadAdventureImage(adventureId, file) {
   {
     /*
