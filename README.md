@@ -13,10 +13,20 @@ Users of this app will be going on outdoor adventures seeking beautiful views ar
 
 ## SupaBase Tables:
 
-| column 1 | column 2 |
+### Adventures 
+
+| column | type |
 | -------- | -------- |
-| info 1   | info 2   |
-| info a   | info b   |
+| user_id | uuid |
+| id  | int8  |
+|  name  | varchar   |
+| image   | varchar   |
+| description | varchar |
+| hint_1 | varchar |
+| hint_2 | varchar |
+| hint_3 | varchar |
+| solution | varchar |
+
 
 Our Beautiful Miro:
 https://miro.com/app/board/uXjVOV_NhpQ=/
