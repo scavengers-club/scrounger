@@ -23,6 +23,9 @@ export default function AdventureDetail({
         <li>{hint_3}</li>
       </ol>
       <h3>{solution}</h3>
+
+      <button>Edit</button>
+      <button>Delete</button>
     </div>
   );
 }

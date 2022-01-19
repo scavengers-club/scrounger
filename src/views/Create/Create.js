@@ -20,7 +20,7 @@ export default function Create({ currentUser }) {
     try {
       await createAdventure(adventure);
       confirm('are you ready to submit this adventure?');
-      //history.push(`/user/${currentUser.id}`);
+      history.push('/profile');
     } catch {
       alert('something went wrong!');
     }

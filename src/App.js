@@ -42,9 +42,9 @@ function App() {
             <LogIn setCurrentUser={setCurrentUser} />
           </Route>
 
-          <Route exact path="/user/:id" {...{ currentUser }}>
+          <ProtectedRoute exact path="/profile" {...{ currentUser }}>
             <Profile {...{ currentUser }} />
-          </Route>
+          </ProtectedRoute>
 
           <ProtectedRoute exact path="/adventure/create" {...{ currentUser }}>
             <Create {...{ currentUser }} />

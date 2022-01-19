@@ -35,7 +35,7 @@ export default function Edit({ currentUser }) {
     try {
       await editAdventure(adventure);
       confirm('are you ready to submit this adventure?');
-      //history.push(`/user/${currentUser.id}`);
+      history.push('/profile');
     } catch {
       alert('something went wrong!');
     }

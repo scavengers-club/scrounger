@@ -20,7 +20,7 @@ export default function Header({ currentUser, setCurrentUser }) {
       </NavLink>
       {currentUser && (
         <>
-          <NavLink to="/user/:id">
+          <NavLink to="/profile">
             <img src={profile}></img>
           </NavLink>
           <img src={logout} onClick={logOutUser}></img>
