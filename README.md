@@ -11,14 +11,16 @@ Users of this app will be going on outdoor adventures seeking beautiful views ar
 - Noah :hot_pepper:
 - Bailey :parrot:
 
-## SupaBase Tables:
+## Supabase Tables:
 
 ### Adventures 
 
 | column | type |
 | -------- | -------- |
-| user_id | uuid |
 | id  | int8  |
+| inserted_at | timestamptz |
+| updated_at | timestamptz |
+| user_id | uuid |
 |  name  | varchar   |
 | image   | varchar   |
 | description | varchar |
@@ -26,6 +28,16 @@ Users of this app will be going on outdoor adventures seeking beautiful views ar
 | hint_2 | varchar |
 | hint_3 | varchar |
 | solution | varchar |
+
+### Profiles
+
+| column | type |
+| -------- | -------- |
+| id | uuid |
+| created_at | timestamptz |
+| username | varchar |
+| avatar | varchar |
+
 
 
 Our Beautiful Miro:
