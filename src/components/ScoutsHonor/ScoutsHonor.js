@@ -24,7 +24,7 @@ export default function ScoutsHonor() {
         are adventuring alone, make sure someone knows where you are. Happy Adventuring!
       </p>
       <label>
-        <input type="checkbox" isChecked={checked} onChange={() => setChecked(!checked)} />
+        <input type="checkbox" value={checked} onChange={() => setChecked(!checked)} />
         <span>I have read and agree to the Scouts Honor Pledge</span>
       </label>
       <button onClick={handleSubmit}>Lets Explore</button>

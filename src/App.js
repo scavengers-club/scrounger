@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './views/Home/Home';
 import Register from './views/Auth/Register';
 import LogIn from './views/Auth/LogIn';
@@ -8,13 +8,23 @@ import Adventure from './views/Adventure/Adventure';
 import Create from './views/Create/Create';
 import Edit from './views/Edit/Edit';
 import { getUser } from './services/users';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ScoutsHonor from './components/ScoutsHonor/ScoutsHonor';
 import ProtectedRoute from './utils/ProtectedRoute';
 import Header from './views/Header/Header';
+``;
 
 function App() {
-  const [currentUser, setCurrentUser] = useState(getUser());
+  const [currentUser, setCurrentUser] = useState(null);
+  const avatars = [`christmas-hat.png`, `feather-hat.png`, `fedora-hat.png`, `winter-hat.png`];
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const user = await getUser();
+      setCurrentUser(user);
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="App">
@@ -25,7 +35,7 @@ function App() {
             <Home {...{ currentUser }} />
           </Route>
           <Route exact path="/register">
-            <Register setCurrentUser={setCurrentUser} />
+            <Register setCurrentUser={setCurrentUser} avatars={avatars} />
           </Route>
           <Route exact path="/login">
             <LogIn setCurrentUser={setCurrentUser} />
@@ -34,6 +44,7 @@ function App() {
           <ProtectedRoute exact path="/user/:id" {...{ currentUser }}>
             <Profile {...{ currentUser }} />
           </ProtectedRoute>
+
           <ProtectedRoute exact path="/adventure/:id" {...{ currentUser }}>
             <Adventure {...{ currentUser }} />
           </ProtectedRoute>
@@ -48,6 +59,34 @@ function App() {
             <ScoutsHonor />
           </Route>
         </Switch>
+
+        {/* This is a temporary footer for attribution to 
+        FlatIcon; we should consider where else these could go */}
+        <footer
+          style={{
+            backgroundColor: 'white',
+            position: 'fixed',
+            bottom: '0',
+            right: '0',
+            display: 'flex',
+            flexDirection: 'column',
+            fontSize: '0.9rem',
+          }}
+        >
+          Icons courtesy of:
+          <a href="https://www.flaticon.com/free-icons/christmas-hat" title="christmas hat icons">
+            Christmas hat icons created by Umeicon - Flaticon
+          </a>
+          <a href="https://www.flaticon.com/free-icons/german" title="german icons">
+            German icons created by Dreamcreateicons - Flaticon
+          </a>
+          <a href="https://www.flaticon.com/free-icons/christmas-hat" title="christmas hat icons">
+            Christmas hat icons created by imaginationlol - Flaticon
+          </a>
+          <a href="https://www.flaticon.com/free-icons/fedora" title="fedora icons">
+            Fedora icons created by Talha Dogar - Flaticon
+          </a>
+        </footer>
       </BrowserRouter>
     </div>
   );
