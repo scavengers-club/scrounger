@@ -3,7 +3,7 @@ import { useParams, useHistory } from 'react-router';
 import AdventureDetail from '../../components/AdventureDetail/AdventureDetail';
 import { getAdventureById, deleteAdventureById } from '../../services/adventures';
 
-export default function Adventure() {
+export default function Adventure({ currentUser }) {
   const [adventure, setAdventure] = useState({});
   const { id } = useParams();
   const history = useHistory();
@@ -30,5 +30,7 @@ export default function Adventure() {
     }
   };
 
-  return <AdventureDetail {...adventure} {...{ handleDelete, handleEdit }} />;
+  console.log(adventure);
+
+  return <AdventureDetail {...adventure} {...{ currentUser, handleDelete, handleEdit }} />;
 }

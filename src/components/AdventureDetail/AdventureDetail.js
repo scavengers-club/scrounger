@@ -4,6 +4,8 @@ import React from 'react';
 //as well as when a user clicks on their created adventures
 
 export default function AdventureDetail({
+  currentUser,
+  user_id,
   name,
   image,
   description,
@@ -26,8 +28,12 @@ export default function AdventureDetail({
       </ol>
       <h3>{solution}</h3>
 
-      <button onClick={handleEdit}>Edit</button>
-      <button onClick={handleDelete}>Delete</button>
+      {currentUser.id === user_id && (
+        <>
+          <button onClick={handleEdit}>Edit</button>
+          <button onClick={handleDelete}>Delete</button>
+        </>
+      )}
     </div>
   );
 }
