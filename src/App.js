@@ -28,7 +28,7 @@ function App() {
         </header>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Home {...{ currentUser }} />
           </Route>
           <Route exact path="/register">
             <Register setCurrentUser={setCurrentUser} />
