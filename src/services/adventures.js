@@ -16,11 +16,31 @@ export async function getAdventureById(id) {
 }
 
 export async function createAdventure(adventure) {
+  await client.storage
+    .from('adv-images')
+    .upload(
+      `${adventure.name.toLowerCase().split(' ').join('-')}/${adventure.image.name}`,
+      adventure.image
+    );
+  const { publicURL } = await client.storage
+    .from('adv-images')
+    .getPublicUrl(`${adventure.name.toLowerCase().split(' ').join('-')}/${adventure.image.name}`);
+  adventure.image = publicURL;
   const resp = await client.from('adventures').insert([adventure]);
   return checkError(resp);
 }
 
 export async function editAdventure(adventure) {
+  await client.storage
+    .from('adv-images')
+    .upload(
+      `${adventure.name.toLowerCase().split(' ').join('-')}/${adventure.image.name}`,
+      adventure.image
+    );
+  const { publicURL } = await client.storage
+    .from('adv-images')
+    .getPublicUrl(`${adventure.name.toLowerCase().split(' ').join('-')}/${adventure.image.name}`);
+  adventure.image = publicURL;
   const resp = await client.from('adventures').update(adventure).eq('id', adventure.id);
   return checkError(resp);
 }

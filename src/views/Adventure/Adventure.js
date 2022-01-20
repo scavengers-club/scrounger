@@ -30,7 +30,5 @@ export default function Adventure({ currentUser }) {
     }
   };
 
-  console.log(adventure);
-
   return <AdventureDetail {...adventure} {...{ currentUser, handleDelete, handleEdit }} />;
 }

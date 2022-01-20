@@ -3,8 +3,6 @@ import { useHistory } from 'react-router';
 import AdventureForm from '../../components/AdventureForm/AdventureForm';
 import { createAdventure } from '../../services/adventures';
 
-// import { uploadAdventureImage } from '../../services/adventures';
-
 export default function Create({ currentUser }) {
   const [adventure, setAdventure] = useState({});
   const history = useHistory();
@@ -25,9 +23,6 @@ export default function Create({ currentUser }) {
       alert('something went wrong!');
     }
   };
-  //   const uploadFile = (e) => {
-  //     uploadAdventureImage(currentUser.id, e.target.files[0]);
-  //   };
 
   return (
     <div>
