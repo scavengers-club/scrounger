@@ -30,10 +30,10 @@ export default function AdventureForm({
       <label>
         image:
         <input
-          type="text"
-          value={image}
+          type="file"
+          src={image}
           onChange={(e) => {
-            updateAdventure('image', e.target.value);
+            updateAdventure('image', e.target.files[0]);
           }}
         />
       </label>
