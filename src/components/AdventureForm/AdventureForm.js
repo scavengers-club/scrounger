@@ -1,7 +1,4 @@
-import React from 'react';
-
-//this will be a shared file, called when a user creates a new adventure (empty),
-//and also called when a user clicks to edit their adventure(filled with specific info)
+import './AdventureForm.css';
 
 export default function AdventureForm({
   updateAdventure,
@@ -32,6 +29,7 @@ export default function AdventureForm({
         <input
           type="file"
           src={image}
+          alt={name}
           onChange={(e) => {
             updateAdventure('image', e.target.files[0]);
           }}

@@ -1,8 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import './AdventureList.css';
 
-//this will render all of the adventures onto to home page
+import './AdventureList.css';
 
 export default function AdventureList({ adventures }) {
   return (
@@ -11,7 +9,7 @@ export default function AdventureList({ adventures }) {
         <div className="adventure-card" key={adventure.id}>
           <Link className="list-link" to={`/adventure/${adventure.id}`}>
             <h3 className="list-title">{adventure.name}</h3>
-            <img className="list-img" src={adventure.image} />
+            <img className="list-img" src={adventure.image} alt={adventure.name} />
           </Link>
         </div>
       ))}

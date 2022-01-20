@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import AdventureList from '../../components/AdventureList/AdventureList';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { getUserAdventures } from '../../services/adventures';
+import AdventureList from '../../components/AdventureList/AdventureList';
 
 export default function Profile({ currentUser }) {
   const [adventures, setAdventures] = useState([]);

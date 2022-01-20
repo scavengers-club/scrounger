@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import AdventureList from '../../components/AdventureList/AdventureList';
+import { useState, useEffect } from 'react';
 import { getAdventures } from '../../services/adventures';
+import AdventureList from '../../components/AdventureList/AdventureList';
 
 export default function Home({ currentUser }) {
   const [adventures, setAdventures] = useState([]);
@@ -19,20 +19,15 @@ export default function Home({ currentUser }) {
 
   return (
     <div>
+      <img className="logo" src={`${process.env.PUBLIC_URL}/example-logo.png`} />
+
       {!currentUser && (
-        <>
-          <h2>Scrounger</h2>
-          <p>
-            This is a description of the app for those who do not have an account or are not logged
-            in to see
-          </p>
-        </>
+        <p>
+          This is a description of the app for those who do not have an account or are not logged in
+          to see
+        </p>
       )}
-      {currentUser && (
-        <>
-          <h2>Welcome back!</h2>
-        </>
-      )}
+      {currentUser && <h2>Welcome back, {currentUser.username}!</h2>}
       <AdventureList {...{ adventures }} />
     </div>
   );

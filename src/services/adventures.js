@@ -49,12 +49,3 @@ export async function deleteAdventureById(id) {
   const resp = await client.from('adventures').delete().match({ id });
   return checkError(resp);
 }
-
-export async function uploadAdventureImage(adventureId, file) {
-  {
-    /*
-    const ext = file.name.split('.').pop();     //this isolates the file extension 
-    await client.storage.from('adv-images').upload(to where?).
-  */
-  }
-}

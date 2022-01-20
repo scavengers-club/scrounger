@@ -1,7 +1,10 @@
+import './Footer.css';
+
 {
   /* This is a temporary footer for attribution to 
         FlatIcon; we should consider where else these could go */
 }
+
 <footer
   style={{
     backgroundColor: 'white',

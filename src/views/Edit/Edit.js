@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
-import AdventureForm from '../../components/AdventureForm/AdventureForm';
 import { editAdventure, getAdventureById } from '../../services/adventures';
+import AdventureForm from '../../components/AdventureForm/AdventureForm';
 
 export default function Edit({ currentUser }) {
   const [adventure, setAdventure] = useState({});
-  const userId = currentUser.id;
+
   const { id } = useParams();
   const history = useHistory();
+  const userId = currentUser.id;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,12 +25,14 @@ export default function Edit({ currentUser }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      await editAdventure(adventure);
-      confirm('are you ready to submit this adventure?');
-      history.push('/profile');
-    } catch {
-      alert('something went wrong!');
+    if (confirm('Update the current adventure?')) {
+      try {
+        await editAdventure(adventure);
+        alert('Adventure updated successfully.');
+        history.push('/profile');
+      } catch {
+        alert('something went wrong!');
+      }
     }
   };
 

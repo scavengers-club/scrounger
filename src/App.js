@@ -1,23 +1,23 @@
-import './App.css';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './views/Home/Home';
-import Register from './views/Auth/Register';
-import LogIn from './views/Auth/LogIn';
-import Profile from './views/Profile/Profile';
+import { getUser } from './services/users';
+
 import Adventure from './views/Adventure/Adventure';
 import Create from './views/Create/Create';
 import Edit from './views/Edit/Edit';
-import { getUser } from './services/users';
-import { useState, useEffect } from 'react';
-import ScoutsHonor from './components/ScoutsHonor/ScoutsHonor';
-import ProtectedRoute from './utils/ProtectedRoute';
 import Header from './components/Header/Header';
-``;
+import Home from './views/Home/Home';
+import LogIn from './views/Auth/LogIn';
+import Profile from './views/Profile/Profile';
+import ProtectedRoute from './utils/ProtectedRoute';
+import Register from './views/Auth/Register';
+import ScoutsHonor from './components/ScoutsHonor/ScoutsHonor';
+
+import './App.css';
 
 function App() {
-  const avatars = [`christmas-hat.png`, `feather-hat.png`, `fedora-hat.png`, `winter-hat.png`];
-
   const [currentUser, setCurrentUser] = useState(null);
+  const avatars = [`westerner-hat.png`, `safety-hat.png`, `chullo-hat.png`, `house-hat.png`];
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -36,23 +36,23 @@ function App() {
             <Home {...{ currentUser }} />
           </Route>
           <Route exact path="/register">
-            <Register setCurrentUser={setCurrentUser} avatars={avatars} />
+            <Register {...{ setCurrentUser, avatars }} />
           </Route>
           <Route exact path="/login">
-            <LogIn setCurrentUser={setCurrentUser} />
+            <LogIn {...{ setCurrentUser }} />
           </Route>
 
-          <ProtectedRoute exact path="/profile" {...{ currentUser }}>
+          <ProtectedRoute path="/profile" {...{ currentUser }}>
             <Profile {...{ currentUser }} />
           </ProtectedRoute>
 
-          <ProtectedRoute exact path="/adventure/create" {...{ currentUser }}>
+          <ProtectedRoute path="/adventure/create" {...{ currentUser }}>
             <Create {...{ currentUser }} />
           </ProtectedRoute>
-          <ProtectedRoute exact path="/adventure/:id/edit" {...{ currentUser }}>
+          <ProtectedRoute path="/adventure/:id/edit" {...{ currentUser }}>
             <Edit {...{ currentUser }} />
           </ProtectedRoute>
-          <ProtectedRoute exact path="/adventure/:id" {...{ currentUser }}>
+          <ProtectedRoute path="/adventure/:id" {...{ currentUser }}>
             <Adventure {...{ currentUser }} />
           </ProtectedRoute>
 

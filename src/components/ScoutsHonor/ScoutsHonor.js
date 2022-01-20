@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
-//this page will appear only when a new user is created
-//will prompt user to agree to basic terms and conitions, verify age, etc
+import './ScoutsHonor.css';
 
 export default function ScoutsHonor() {
   const [checked, setChecked] = useState(false);

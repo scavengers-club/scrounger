@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useHistory } from 'react-router';
-import AdventureForm from '../../components/AdventureForm/AdventureForm';
 import { createAdventure } from '../../services/adventures';
+import AdventureForm from '../../components/AdventureForm/AdventureForm';
 
 export default function Create({ currentUser }) {
   const [adventure, setAdventure] = useState({});
+
   const history = useHistory();
   const userId = currentUser.id;
 
@@ -15,12 +16,14 @@ export default function Create({ currentUser }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      await createAdventure(adventure);
-      confirm('are you ready to submit this adventure?');
-      history.push('/profile');
-    } catch {
-      alert('something went wrong!');
+    if (confirm('Create this new adventure?')) {
+      try {
+        await createAdventure(adventure);
+        alert('Your new adventure awaits!');
+        history.push('/profile');
+      } catch {
+        alert('something went wrong!');
+      }
     }
   };
 
