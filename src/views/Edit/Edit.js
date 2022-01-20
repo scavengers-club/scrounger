@@ -5,6 +5,7 @@ import AdventureForm from '../../components/AdventureForm/AdventureForm';
 
 export default function Edit({ currentUser }) {
   const [adventure, setAdventure] = useState({});
+  const [newImage, setNewImage] = useState(null);
 
   const { id } = useParams();
   const history = useHistory();
@@ -19,15 +20,17 @@ export default function Edit({ currentUser }) {
   }, [id]);
 
   const updateAdventure = (key, value) => {
-    adventure[key] = value;
-    setAdventure({ ...adventure, user_id: userId });
+    if (value) {
+      adventure[key] = value;
+      setAdventure({ ...adventure, user_id: userId });
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (confirm('Update the current adventure?')) {
       try {
-        await editAdventure(adventure);
+        await editAdventure(adventure, newImage);
         alert('Adventure updated successfully.');
         history.push('/profile');
       } catch {
@@ -38,7 +41,7 @@ export default function Edit({ currentUser }) {
 
   return (
     <div>
-      <AdventureForm {...adventure} {...{ updateAdventure, handleSubmit }} />
+      <AdventureForm {...adventure} {...{ updateAdventure, handleSubmit, setNewImage }} />
     </div>
   );
 }
