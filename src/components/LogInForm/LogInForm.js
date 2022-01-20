@@ -5,7 +5,7 @@ import './LogInForm.css';
 export default function LogInForm({ email, setEmail, password, setPassword, handleSubmit }) {
   return (
     <>
-      <form>
+      <form className="login-form">
         <label>
           email:
           <input

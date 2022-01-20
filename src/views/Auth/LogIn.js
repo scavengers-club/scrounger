@@ -18,7 +18,6 @@ export default function LogIn({ setCurrentUser }) {
 
   return (
     <div>
-      <h1>Log In</h1>
       <LogInForm {...{ email, setEmail, password, setPassword, handleSubmit }} />
     </div>
   );
