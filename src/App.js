@@ -45,7 +45,6 @@ function App() {
           <ProtectedRoute path="/profile" {...{ currentUser }}>
             <Profile {...{ currentUser }} />
           </ProtectedRoute>
-
           <ProtectedRoute path="/adventure/create" {...{ currentUser }}>
             <Create {...{ currentUser }} />
           </ProtectedRoute>

@@ -22,12 +22,12 @@ export default function Home({ currentUser }) {
       <img className="logo" src={`${process.env.PUBLIC_URL}/example-logo.png`} />
 
       {!currentUser && (
-        <p>
+        <p className="message-box">
           This is a description of the app for those who do not have an account or are not logged in
           to see
         </p>
       )}
-      {currentUser && <h2>Welcome back, {currentUser.username}!</h2>}
+      {currentUser && <h3 className="message-box">Welcome back, {currentUser.username}!</h3>}
       <AdventureList {...{ adventures }} />
     </div>
   );
