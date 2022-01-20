@@ -17,8 +17,8 @@ export default function RegisterForm({
 }) {
   return (
     <>
-      <form>
-        <label>
+      <form className="register-form">
+        <label className="register-input">
           username:
           <input
             type="text"
@@ -27,7 +27,7 @@ export default function RegisterForm({
             placeholder="make it unique"
           />
         </label>
-        <label>
+        <label className="register-input">
           email:
           <input
             type="email"
@@ -36,7 +36,7 @@ export default function RegisterForm({
             placeholder="email@example.com"
           />
         </label>
-        <label>
+        <label className="register-input">
           password:
           <input
             type="password"
@@ -45,12 +45,6 @@ export default function RegisterForm({
             placeholder="make it strong"
           />
         </label>
-
-        {/* check if input value === password */}
-        {/* <label>
-          re-enter password:
-          <input type="password" />
-        </label> */}
 
         <fieldset>
           <legend>Avatar:</legend>
@@ -97,7 +91,9 @@ export default function RegisterForm({
           <span>I am over the age of 13</span>
         </label>
 
-        <button onClick={handleSubmit}>Register</button>
+        <button className="register-button" onClick={handleSubmit}>
+          Register
+        </button>
       </form>
       <p>Already have an account?</p>
       <Link to="/login">Log In</Link>

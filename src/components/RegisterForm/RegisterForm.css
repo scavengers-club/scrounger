@@ -1,0 +1,43 @@
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 80vw;
+  margin: 10%;
+  align-items: center;
+}
+
+.register-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-input input {
+  background-color: rgba(255, 255, 255, 0.527);
+  color: black;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+.register-button {
+  width: 20vw;
+  background-color: var(--purple);
+}
+
+fieldset img {
+  width: 15vw;
+  margin: 1vw;
+}
+
+fieldset input[type='radio'] {
+  display: none;
+}
+
+fieldset input[type='radio']:checked + img {
+  filter: drop-shadow(0px 10px 10px var(--sand));
+}
+
+.register-form input::placeholder {
+  color: var(--purple);
+}
