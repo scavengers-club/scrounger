@@ -2,6 +2,9 @@
   width: 35vw;
   height: 35vw;
   object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid var(--sand);
+  filter: drop-shadow(5px 5px 5px rgb(62, 62, 62));
 }
 
 .adventure-list {
@@ -22,6 +25,8 @@
   font-size: 150%;
   text-overflow: ellipsis;
   text-transform: uppercase;
+  margin: 5px;
+  text-shadow: 2px 2px 2px rgb(62, 62, 62);
 }
 
 .list-link {

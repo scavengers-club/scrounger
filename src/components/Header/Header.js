@@ -28,7 +28,7 @@ export default function Header({ currentUser, setCurrentUser }) {
         <>
           <NavLink className="nav-link" to="/profile">
             <img
-              className="nav-icon"
+              className="nav-icon profile"
               src={`${process.env.PUBLIC_URL}/avatars/${currentUser.avatar}`}
               alt="Your profile"
             />
