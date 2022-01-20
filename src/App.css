@@ -1,0 +1,20 @@
+:root {
+  --light-orange: rgb(216, 138, 82);
+  --burnt-orange: rgb(173, 84, 70);
+  --burgundy: rgb(131, 72, 73);
+  --slate-green: rgb(76, 95, 95);
+  --seafoam: rgb(177, 197, 195);
+  --purple: rgb(94, 76, 94);
+  --sand: rgb(229, 221, 208);
+}
+
+* {
+  color: var(--sand);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.App {
+  background: linear-gradient(180deg, hsla(359, 29%, 40%, 1) 0%, hsla(25, 63%, 58%, 1) 100%);
+}
+
+/*  other font for headers font-family: 'Quicksand', sans-serif; */

@@ -4,6 +4,7 @@ import { logOut } from '../../services/users';
 import home from '../../navIcons/home.png';
 import profile from '../../navIcons/profile.png';
 import logout from '../../navIcons/logout.png';
+import './Header.css';
 
 export default function Header({ currentUser, setCurrentUser }) {
   const logOutUser = async () => {
@@ -16,7 +17,7 @@ export default function Header({ currentUser, setCurrentUser }) {
   return (
     <header>
       <NavLink exact to="/">
-        <img src={home}></img>
+        <img className="nav-icon" src={home}></img>
       </NavLink>
       {currentUser && (
         <>
@@ -28,8 +29,12 @@ export default function Header({ currentUser, setCurrentUser }) {
       )}
       {!currentUser && (
         <>
-          <NavLink to="/register">Register</NavLink>
-          <NavLink to="/login">Log In</NavLink>
+          <NavLink className="nav-link" to="/register">
+            Register
+          </NavLink>
+          <NavLink className="nav-link" to="/login">
+            Log In
+          </NavLink>
         </>
       )}
     </header>

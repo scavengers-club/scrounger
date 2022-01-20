@@ -1,0 +1,29 @@
+.list-img {
+  width: 35vw;
+  height: 35vw;
+  object-fit: cover;
+}
+
+.adventure-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.adventure-card {
+  max-width: 40vw;
+  text-align: center;
+}
+
+.list-title {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 150%;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
+.list-link {
+  text-decoration: none;
+}
