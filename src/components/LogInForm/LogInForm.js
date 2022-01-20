@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import './LogInForm.css';
+
 export default function LogInForm({ email, setEmail, password, setPassword, handleSubmit }) {
   return (
     <>

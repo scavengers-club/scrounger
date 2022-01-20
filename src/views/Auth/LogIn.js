@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import LogInForm from '../../components/LogInForm/LogInForm';
-import { logInUser } from '../../services/users';
+import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { logInUser } from '../../services/users';
+import LogInForm from '../../components/LogInForm/LogInForm';
 
 export default function LogIn({ setCurrentUser }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
   const history = useHistory();
 
   const handleSubmit = async (e) => {

@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router';
-import AdventureDetail from '../../components/AdventureDetail/AdventureDetail';
 import { getAdventureById, deleteAdventureById } from '../../services/adventures';
+import AdventureDetail from '../../components/AdventureDetail/AdventureDetail';
 
 export default function Adventure({ currentUser }) {
   const [adventure, setAdventure] = useState({});
+
   const { id } = useParams();
   const history = useHistory();
 
@@ -21,12 +22,14 @@ export default function Adventure({ currentUser }) {
   };
 
   const handleDelete = async () => {
-    try {
-      await deleteAdventureById(id);
-      alert('adventure deleted');
-      history.push('/profile');
-    } catch {
-      alert('something went wrong!');
+    if (confirm('Are you sure you want to delete this adventure?')) {
+      try {
+        await deleteAdventureById(id);
+        alert('Adventure was successfully deleted.');
+        history.push('/profile');
+      } catch {
+        alert('something went wrong!');
+      }
     }
   };
 

@@ -1,32 +1,48 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { logOut } from '../../services/users';
-import home from '../../navIcons/home.png';
-import profile from '../../navIcons/profile.png';
-import logout from '../../navIcons/logout.png';
+
 import './Header.css';
 
 export default function Header({ currentUser, setCurrentUser }) {
+  const history = useHistory();
+
   const logOutUser = async () => {
-    if (confirm('are you sure you want to logout?') === true) {
+    if (confirm('are you sure you want to logout?')) {
       await logOut();
       setCurrentUser(null);
+      history.push('/');
     }
   };
 
   return (
     <header>
-      <NavLink exact to="/">
-        <img className="nav-icon" src={home}></img>
+      <NavLink exact to="/" className="nav-link">
+        <img
+          className="nav-icon"
+          src={`${process.env.PUBLIC_URL}/nav_icons/home-icon.png`}
+          alt="Home page"
+        />
       </NavLink>
+
       {currentUser && (
         <>
-          <NavLink to="/profile">
-            <img src={profile}></img>
+          <NavLink className="nav-link" to="/profile">
+            <img
+              className="nav-icon"
+              src={`${process.env.PUBLIC_URL}/avatars/${currentUser.avatar}`}
+              alt="Your profile"
+            />
           </NavLink>
-          <img src={logout} onClick={logOutUser}></img>
+          <img
+            className="nav-icon"
+            src={`${process.env.PUBLIC_URL}/nav_icons/boot.png`}
+            alt="Log out"
+            onClick={logOutUser}
+            style={{ cursor: 'pointer' }}
+          />
         </>
       )}
+
       {!currentUser && (
         <>
           <NavLink className="nav-link" to="/register">

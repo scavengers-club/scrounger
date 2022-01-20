@@ -1,11 +1,6 @@
-import React from 'react';
-
-//this will be a shared filed, used for displaying info when clicked on home page,
-//as well as when a user clicks on their created adventures
+import './AdventureDetail.css';
 
 export default function AdventureDetail({
-  currentUser,
-  user_id,
   name,
   image,
   description,
@@ -13,13 +8,15 @@ export default function AdventureDetail({
   hint_2,
   hint_3,
   solution,
+  currentUser,
+  user_id,
   handleEdit,
   handleDelete,
 }) {
   return (
     <div>
       <h3>{name}</h3>
-      <img width="400px" src={image} />
+      <img src={image} alt={name} />
       <h3>{description}</h3>
       <ol>
         <li>{hint_1}</li>
