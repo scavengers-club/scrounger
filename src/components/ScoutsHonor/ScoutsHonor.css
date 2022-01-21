@@ -1,0 +1,34 @@
+.scout-button {
+  width: 25vw;
+  background-color: var(--purple);
+  border-radius: 7px;
+  padding: 3px;
+  display: block;
+  margin: 2vh;
+}
+
+.scout-text {
+  display: flex;
+  flex-direction: column;
+  margin: 3vh;
+}
+
+.scout-text h3,
+p {
+  margin: 1vh;
+}
+
+.scout-text h3 {
+  text-align: center;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 200%;
+  text-transform: uppercase;
+}
+
+.lets-explore {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 2vh;
+}
