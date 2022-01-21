@@ -23,8 +23,9 @@ export default function Home({ currentUser }) {
 
       {!currentUser && (
         <p className="message-box">
-          This is a description of the app for those who do not have an account or are not logged in
-          to see
+          Welcome explorer! We&apos;re here to guide you on real-world adventures. Scrounger
+          encourages you to explore, discover the world, and cultivate community by creating shared
+          experiences.
         </p>
       )}
       {currentUser && <h3 className="message-box">Welcome back, {currentUser.username}!</h3>}

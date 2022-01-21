@@ -26,8 +26,10 @@ export default function LogInForm({ email, setEmail, password, setPassword, hand
         </label>
         <button onClick={handleSubmit}>Log In</button>
       </form>
-      <p>New to Scrounger?</p>
-      <Link to="/register">Register</Link>
+      <div className="redirect">
+        <p>New to Scrounger?</p>
+        <Link to="/register">Register</Link>
+      </div>
     </>
   );
 }

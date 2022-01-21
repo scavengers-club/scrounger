@@ -22,8 +22,14 @@
 .login-form button {
   width: 20vw;
   background-color: var(--purple);
+  border-radius: 7px;
+  padding: 3px;
 }
 
 .login-form input::placeholder {
   color: var(--purple);
+}
+
+.redirect {
+  text-align: center;
 }

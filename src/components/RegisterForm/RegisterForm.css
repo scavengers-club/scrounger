@@ -18,11 +18,14 @@
   color: black;
   border-radius: 7px;
   padding: 3px;
+  text-align: center;
 }
 
 .register-button {
   width: 20vw;
   background-color: var(--purple);
+  border-radius: 7px;
+  padding: 3px;
 }
 
 fieldset img {
@@ -40,4 +43,8 @@ fieldset input[type='radio']:checked + img {
 
 .register-form input::placeholder {
   color: var(--purple);
+}
+
+.redirect {
+  text-align: center;
 }

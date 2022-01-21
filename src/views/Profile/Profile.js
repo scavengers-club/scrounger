@@ -21,11 +21,12 @@ export default function Profile({ currentUser }) {
 
   return (
     <div>
-      <h1>Hi I am Profile</h1>
-      <AdventureList {...{ adventures }} />
+      <h1>Here are your adventures, {currentUser.username}</h1>
       <Link exact to="/adventure/create">
         create new adventure
       </Link>
+      {adventures.length === 0 ? <p>You have no adventures yet...</p> : null}
+      <AdventureList {...{ adventures }} />
     </div>
   );
 }

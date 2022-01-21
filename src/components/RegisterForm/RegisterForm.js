@@ -95,8 +95,10 @@ export default function RegisterForm({
           Register
         </button>
       </form>
-      <p>Already have an account?</p>
-      <Link to="/login">Log In</Link>
+      <div className="redirect">
+        <p>Already have an account?</p>
+        <Link to="/login">Log In</Link>
+      </div>
     </>
   );
 }
