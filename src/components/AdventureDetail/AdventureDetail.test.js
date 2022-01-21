@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
 import AdventureDetail from './AdventureDetail';
-import { getAdventureById } from '../../services/adventures';
 
 test('<AdventureDetail/> should render adventure details', () => {
   const adventure = {
