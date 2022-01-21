@@ -12,18 +12,18 @@ exports[`Edit should render prefilled form  1`] = `
           placeholder="name"
           required=""
           type="text"
-          value="a place"
+          value="mount hood"
         />
       </label>
       <label>
         image:
         <input
-          alt="a place"
+          alt="mount hood"
           type="file"
         />
       </label>
       <img
-        src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/a-place/trillium.jpg"
+        src="https://kfnfolzoauwbouvhqbrv.supabase.in/storage/v1/object/public/adv-images/trillium.jpg"
       />
       <label>
         description:
@@ -32,7 +32,7 @@ exports[`Edit should render prefilled form  1`] = `
           required=""
           type="text"
         >
-          da
+          this adventure is for people, but also animals
         </textarea>
       </label>
       <label>
@@ -42,7 +42,7 @@ exports[`Edit should render prefilled form  1`] = `
           required=""
           type="text"
         >
-          as
+          hint 1
         </textarea>
       </label>
       <label>
@@ -52,7 +52,7 @@ exports[`Edit should render prefilled form  1`] = `
           required=""
           type="text"
         >
-          da
+          hint 2
         </textarea>
       </label>
       <label>
@@ -62,7 +62,7 @@ exports[`Edit should render prefilled form  1`] = `
           required=""
           type="text"
         >
-          da
+          hint 3
         </textarea>
       </label>
       <label>
@@ -71,7 +71,7 @@ exports[`Edit should render prefilled form  1`] = `
           placeholder="solution"
           required=""
           type="text"
-          value="da"
+          value="Trillium Lake"
         />
       </label>
       <button>

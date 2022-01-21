@@ -4,16 +4,16 @@ import Edit from './Edit';
 
 test('Edit should render prefilled form ', async () => {
   const { container } = render(
-    <MemoryRouter initialEntries={['/adventure/25/edit']}>
+    <MemoryRouter initialEntries={['/adventure/1/edit']}>
       <Route path="/adventure/:id/edit">
         <Edit
-          currentUser={{ id: 'ab0abbd1-29ad-414e-a8f2-343377f6b2bc' }}
-          match={{ params: { id: 25 } }}
+          currentUser={{ id: 'cdac1946-18d3-46a7-b531-9a2fb66ade51' }}
+          match={{ params: { id: 1 } }}
         />{' '}
       </Route>
     </MemoryRouter>
   );
-  await screen.findByDisplayValue('a place');
+  await screen.findByDisplayValue('mount hood');
 
   expect(container).toMatchSnapshot();
 });
