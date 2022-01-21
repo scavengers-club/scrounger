@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header/> should display register and log in options 1`] = `
+<div>
+  <header>
+    <a
+      aria-current="page"
+      class="nav-link active"
+      href="/"
+    >
+      <img
+        alt="Home page"
+        class="nav-icon"
+        src="/nav_icons/home-icon.png"
+      />
+    </a>
+    <a
+      class="nav-link"
+      href="/register"
+    >
+      Register
+    </a>
+    <a
+      class="nav-link"
+      href="/login"
+    >
+      Log In
+    </a>
+  </header>
+</div>
+`;
