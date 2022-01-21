@@ -47,7 +47,7 @@ export default function RegisterForm({
         </label>
 
         <fieldset>
-          <legend>Avatar:</legend>
+          <legend>what kind of adventurer are you?</legend>
           <label>
             <input
               type="radio"

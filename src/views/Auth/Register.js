@@ -19,7 +19,9 @@ export default function Register({ setCurrentUser, avatars }) {
       setCurrentUser(resp);
       history.push('/scoutshonor');
     } else {
-      alert(`You must agree to the Scout's Honor before exploring!`);
+      alert(
+        `You must be over the age of 13 to use this app - check the box to continue if you are 13 or over.`
+      );
     }
   };
 

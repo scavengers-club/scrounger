@@ -41,6 +41,10 @@ fieldset input[type='radio']:checked + img {
   filter: drop-shadow(0px 10px 10px var(--sand));
 }
 
+fieldset legend {
+  text-align: center;
+}
+
 .register-form input::placeholder {
   color: var(--purple);
 }

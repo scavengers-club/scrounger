@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+
+  margin-top: 3vh;
+  padding: 2%;
+
+  background-color: rgba(94, 76, 94, 0.75);
+  border-top: 2px solid var(--sand);
+  border-bottom: 2px solid var(--sand);
+
+  position: relative;
+  bottom: 0;
+}

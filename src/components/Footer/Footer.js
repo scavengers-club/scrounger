@@ -1,32 +1,24 @@
 import './Footer.css';
 
-{
-  /* This is a temporary footer for attribution to 
-        FlatIcon; we should consider where else these could go */
+export default function Footer() {
+  return (
+    <footer>
+      <div className="github-wrapper">
+        <a href="https://github.com/scavengers-club/scrounger">
+          <img src={`${process.env.PUBLIC_URL}/img/github.png`} />
+          <p>Find us on GitHub!</p>
+        </a>
+      </div>
+      <div className="icons8-wrapper">
+        <span>Icons courtesy of </span>
+        <a
+          href="https://icons8.com/icons/authors/g26qDX9Ae6NS/icongeek26"
+          title="icons8-author-icongeek26"
+        >
+          icongeek26
+        </a>{' '}
+        at <a href="https://icons8.com/">icons8.com</a>
+      </div>
+    </footer>
+  );
 }
-
-<footer
-  style={{
-    backgroundColor: 'white',
-    position: 'fixed',
-    bottom: '0',
-    right: '0',
-    display: 'flex',
-    flexDirection: 'column',
-    fontSize: '0.9rem',
-  }}
->
-  Icons courtesy of:
-  <a href="https://www.flaticon.com/free-icons/christmas-hat" title="christmas hat icons">
-    Christmas hat icons created by Umeicon - Flaticon
-  </a>
-  <a href="https://www.flaticon.com/free-icons/german" title="german icons">
-    German icons created by Dreamcreateicons - Flaticon
-  </a>
-  <a href="https://www.flaticon.com/free-icons/christmas-hat" title="christmas hat icons">
-    Christmas hat icons created by imaginationlol - Flaticon
-  </a>
-  <a href="https://www.flaticon.com/free-icons/fedora" title="fedora icons">
-    Fedora icons created by Talha Dogar - Flaticon
-  </a>
-</footer>;

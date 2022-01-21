@@ -11,21 +11,26 @@ import LogIn from './views/Auth/LogIn';
 import Profile from './views/Profile/Profile';
 import ProtectedRoute from './utils/ProtectedRoute';
 import Register from './views/Auth/Register';
-import ScoutsHonor from './components/ScoutsHonor/ScoutsHonor';
+import ScoutsHonor from './views/ScoutsHonor/ScoutsHonor';
 
 import './App.css';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const avatars = [`westerner-hat.png`, `safety-hat.png`, `chullo-hat.png`, `house-hat.png`];
 
   useEffect(() => {
     const fetchUser = async () => {
       const user = await getUser();
       setCurrentUser(user);
+      setLoading(false);
     };
     fetchUser();
   }, []);
+
+  if (loading) return <h2>getting profile...</h2>;
 
   return (
     <div className="App">
@@ -59,6 +64,7 @@ function App() {
             <ScoutsHonor />
           </Route>
         </Switch>
+        <Footer />
       </BrowserRouter>
     </div>
   );

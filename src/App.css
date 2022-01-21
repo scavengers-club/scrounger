@@ -39,4 +39,5 @@ body {
   margin: 15px;
   padding: 15px;
   text-align: center;
+  filter: drop-shadow(5px 5px 1px rgba(62, 62, 62, 0.5));
 }

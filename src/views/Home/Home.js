@@ -19,13 +19,13 @@ export default function Home({ currentUser }) {
 
   return (
     <div>
-      <img className="logo" src={`${process.env.PUBLIC_URL}/example-logo.png`} />
+      <img className="logo" src={`${process.env.PUBLIC_URL}/logo.png`} />
 
       {!currentUser && (
         <p className="message-box">
-          Welcome explorer! We&apos;re here to guide you on real-world adventures. Scrounger
-          encourages you to explore, discover the world, and cultivate community by creating shared
-          experiences.
+          Welcome, explorer! <em>Scrounger</em> is your guide to real-world adventures - right in
+          your neighborhood! We encourage you to explore, discover the world, and cultivate
+          community by creating shared experiences. Here are a few to get you started:
         </p>
       )}
       {currentUser && <h3 className="message-box">Welcome back, {currentUser.username}!</h3>}

@@ -7,12 +7,13 @@ header {
   height: 12vh;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  filter: drop-shadow(5px 5px 1px rgba(62, 62, 62, 0.5));
 }
 
 .nav-link {
   color: var(--purple);
   font-weight: 900;
-  font-size: 120%;
+  font-size: 5vw;
   text-shadow: 2px 2px 2px white;
   text-decoration: none;
 }
