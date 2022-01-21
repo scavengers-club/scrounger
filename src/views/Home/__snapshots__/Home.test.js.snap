@@ -5,7 +5,7 @@ exports[`<Home/> should welcome current user 1`] = `
   <div>
     <img
       class="logo"
-      src="/example-logo.png"
+      src="/logo.png"
     />
     <h3
       class="message-box"
@@ -22,15 +22,91 @@ exports[`<Home/> should welcome current user 1`] = `
       >
         <a
           class="list-link"
+          href="/adventure/29"
+        >
+          <h3
+            class="list-title"
+          >
+            Wishing Tree
+          </h3>
+          <img
+            alt="Wishing Tree"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/wishing-tree/wishing-tree.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/30"
+        >
+          <h3
+            class="list-title"
+          >
+            Witch’s Castle
+          </h3>
+          <img
+            alt="Witch’s Castle"
+            class="list-img"
+            src="http://pnwphotoblog.com/wp-content/uploads/sites/11/2010/05/Stone-House.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/28"
+        >
+          <h3
+            class="list-title"
+          >
+            Waterfront Docks
+          </h3>
+          <img
+            alt="Waterfront Docks"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/waterfront-docks/marine drive docks.jpeg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/16"
+        >
+          <h3
+            class="list-title"
+          >
+            Portland House
+          </h3>
+          <img
+            alt="Portland House"
+            class="list-img"
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/7b/portland.jpg?w=700&h=500&s=1"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
           href="/adventure/2"
         >
           <h3
             class="list-title"
           >
-            portland adventure
+            Old Portland Adventure
           </h3>
           <img
-            alt="portland adventure"
+            alt="Old Portland Adventure"
             class="list-img"
             src="https://kfnfolzoauwbouvhqbrv.supabase.in/storage/v1/object/public/adv-images/streetsign.jpg"
           />
@@ -60,44 +136,6 @@ exports[`<Home/> should welcome current user 1`] = `
       >
         <a
           class="list-link"
-          href="/adventure/15"
-        >
-          <h3
-            class="list-title"
-          >
-            blah
-          </h3>
-          <img
-            alt="blah"
-            class="list-img"
-            src="https://static.onecms.io/wp-content/uploads/sites/28/2021/05/06/portand-oregon-PORTLANDTG0521.jpg"
-          />
-        </a>
-      </div>
-      <div
-        class="adventure-card"
-      >
-        <a
-          class="list-link"
-          href="/adventure/25"
-        >
-          <h3
-            class="list-title"
-          >
-            a place
-          </h3>
-          <img
-            alt="a place"
-            class="list-img"
-            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/a-place/trillium.jpg"
-          />
-        </a>
-      </div>
-      <div
-        class="adventure-card"
-      >
-        <a
-          class="list-link"
           href="/adventure/3"
         >
           <h3
@@ -117,55 +155,17 @@ exports[`<Home/> should welcome current user 1`] = `
       >
         <a
           class="list-link"
-          href="/adventure/16"
+          href="/adventure/15"
         >
           <h3
             class="list-title"
           >
-            pdx house
+            bridge magic
           </h3>
           <img
-            alt="pdx house"
+            alt="bridge magic"
             class="list-img"
-            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/7b/portland.jpg?w=700&h=500&s=1"
-          />
-        </a>
-      </div>
-      <div
-        class="adventure-card"
-      >
-        <a
-          class="list-link"
-          href="/adventure/27"
-        >
-          <h3
-            class="list-title"
-          >
-            BFOUEIWHFOIEW
-          </h3>
-          <img
-            alt="BFOUEIWHFOIEW"
-            class="list-img"
-            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/bfoueiwhfoiew/portland-oregon-weird-things-to-do-wishing-tree.jpg"
-          />
-        </a>
-      </div>
-      <div
-        class="adventure-card"
-      >
-        <a
-          class="list-link"
-          href="/adventure/26"
-        >
-          <h3
-            class="list-title"
-          >
-            sdfcdfaf
-          </h3>
-          <img
-            alt="sdfcdfaf"
-            class="list-img"
-            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/sdfcdfaf/portland-oregon-weird-things-to-do-mill-ends-park.jpg"
+            src="https://static.onecms.io/wp-content/uploads/sites/28/2021/05/06/portand-oregon-PORTLANDTG0521.jpg"
           />
         </a>
       </div>
