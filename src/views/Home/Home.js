@@ -19,7 +19,7 @@ export default function Home({ currentUser }) {
 
   return (
     <div>
-      <img className="logo" src={`${process.env.PUBLIC_URL}/example-logo.png`} />
+      <img className="logo" src={`${process.env.PUBLIC_URL}/logo.png`} />
 
       {!currentUser && (
         <p className="message-box">
