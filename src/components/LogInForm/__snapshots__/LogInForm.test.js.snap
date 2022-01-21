@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Home/> should welcome current user 1`] = `
+exports[`<LogInForm/> should display an empty form for returning user 1`] = `
 <div>
   <form
     class="login-form"
