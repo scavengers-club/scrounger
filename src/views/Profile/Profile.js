@@ -23,9 +23,7 @@ export default function Profile({ currentUser }) {
   return (
     <div className="profile">
       <h1 className="profile-header">Here are your adventures, {currentUser.username}</h1>
-      <Link exact to="/adventure/create">
-        create new adventure
-      </Link>
+      <Link to="/adventure/create">create new adventure</Link>
       {adventures.length === 0 ? <p>You have no adventures yet...</p> : null}
       <AdventureList {...{ adventures }} />
     </div>
