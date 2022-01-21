@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getUserAdventures } from '../../services/adventures';
 import AdventureList from '../../components/AdventureList/AdventureList';
+import './Profile.css';
 
 export default function Profile({ currentUser }) {
   const [adventures, setAdventures] = useState([]);
@@ -20,8 +21,8 @@ export default function Profile({ currentUser }) {
   if (loading) return <h1>loading</h1>;
 
   return (
-    <div>
-      <h1>Here are your adventures, {currentUser.username}</h1>
+    <div className="profile">
+      <h1 className="profile-header">Here are your adventures, {currentUser.username}</h1>
       <Link exact to="/adventure/create">
         create new adventure
       </Link>

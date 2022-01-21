@@ -1,0 +1,43 @@
+.adventure-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adventure-detail img {
+  width: 80vw;
+  height: 80vw;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid var(--sand);
+  filter: drop-shadow(5px 5px 5px rgb(62, 62, 62));
+  margin-bottom: 2vh;
+}
+
+.adventure-detail h3 {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 200%;
+  text-transform: uppercase;
+  margin: 3vh;
+}
+
+.adventure-detail h4 {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 150%;
+  text-transform: uppercase;
+  margin: 1vh;
+}
+
+.adventure-detail button {
+  width: 20vw;
+  background-color: var(--purple);
+  border-radius: 7px;
+  padding: 3px;
+  margin: 3vw;
+}
+
+.adventure-detail p {
+  width: 80vw;
+  overflow-wrap: break-word;
+  text-align: center;
+}

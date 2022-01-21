@@ -1,0 +1,51 @@
+.adventure-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 80vw;
+  margin: 10%;
+  align-items: center;
+}
+
+.adventure-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adventure-form input,
+textarea {
+  background-color: rgba(255, 255, 255, 0.527);
+  color: black;
+  border-radius: 7px;
+  padding: 3px;
+  text-align: center;
+  width: 50vw;
+}
+
+.adventure-form input[type='file'] {
+  width: 50vw;
+}
+
+.adventure-form button {
+  width: 20vw;
+  background-color: var(--purple);
+  border-radius: 7px;
+  padding: 3px;
+}
+
+.adventure-form input[type='file']::file-selector-button {
+  background-color: var(--purple);
+  border-radius: 7px;
+  padding: 3px;
+  color: var(--sand);
+}
+
+.adventure-form img {
+  width: 50vw;
+  height: 50vw;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid var(--sand);
+  filter: drop-shadow(5px 5px 5px rgb(62, 62, 62));
+}

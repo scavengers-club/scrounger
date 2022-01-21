@@ -1,0 +1,12 @@
+.profile-header {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 200%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -33,7 +33,7 @@ export default function RegisterForm({
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="email@example.com"
+            placeholder="make it real"
           />
         </label>
         <label className="register-input">
