@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AdventureDetail/> should render adventure details 1`] = `
+<div>
+  <div
+    class="adventure-detail"
+  >
+    <h3>
+      unique adventure
+    </h3>
+    <img
+      alt="unique adventure"
+      src="https://media.istockphoto.com/photos/sunset-in-downtown-portland-oregon-picture-id1283364803?b=1&k=20&m=1283364803&s=170667a&w=0&h=CEcB5sIBGs1GX3LhyLxgU53K7rgeP4vNsC4tWhesOAo="
+    />
+    <h4>
+      Description:
+    </h4>
+    <p>
+      this is a description
+    </p>
+    <p>
+      Hint 1: 
+      go here
+    </p>
+    <p>
+      Hint 2: 
+      go there
+    </p>
+    <p>
+      Hint 3: 
+      go everywhere
+    </p>
+    <h4>
+      Solution: 
+      you are beautiful
+    </h4>
+  </div>
+</div>
+`;

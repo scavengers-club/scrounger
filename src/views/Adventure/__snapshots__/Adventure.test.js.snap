@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Adventure/> should render the list of adventures 1`] = `
+exports[`<Adventure/> should render adventure details 1`] = `
 <div>
   <div
     class="adventure-detail"

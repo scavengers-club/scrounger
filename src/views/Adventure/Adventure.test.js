@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
 import Adventure from './Adventure';
 
-test('<Adventure/> should render the list of adventures', async () => {
+test('<Adventure/> should render adventure details', async () => {
   const { container } = render(
     <MemoryRouter initialEntries={['/adventure/1']}>
       <Route path="/adventure/:id">
