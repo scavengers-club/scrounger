@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Create should render empty form 1`] = `
+exports[`Edit should render prefilled form  1`] = `
 <div>
   <div>
     <form
@@ -12,23 +12,28 @@ exports[`Create should render empty form 1`] = `
           placeholder="name"
           required=""
           type="text"
-          value=""
+          value="a place"
         />
       </label>
       <label>
         image:
         <input
+          alt="a place"
           type="file"
         />
       </label>
-      <img />
+      <img
+        src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/a-place/trillium.jpg"
+      />
       <label>
         description:
         <textarea
           placeholder="description"
           required=""
           type="text"
-        />
+        >
+          da
+        </textarea>
       </label>
       <label>
         hint 1:
@@ -36,7 +41,9 @@ exports[`Create should render empty form 1`] = `
           placeholder="hint 1"
           required=""
           type="text"
-        />
+        >
+          as
+        </textarea>
       </label>
       <label>
         hint 2:
@@ -44,7 +51,9 @@ exports[`Create should render empty form 1`] = `
           placeholder="hint 2"
           required=""
           type="text"
-        />
+        >
+          da
+        </textarea>
       </label>
       <label>
         hint 3:
@@ -52,7 +61,9 @@ exports[`Create should render empty form 1`] = `
           placeholder="hint 3"
           required=""
           type="text"
-        />
+        >
+          da
+        </textarea>
       </label>
       <label>
         solution:
@@ -60,7 +71,7 @@ exports[`Create should render empty form 1`] = `
           placeholder="solution"
           required=""
           type="text"
-          value=""
+          value="da"
         />
       </label>
       <button>

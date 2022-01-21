@@ -1,48 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`log in should render LogIn component 1`] = `
-<div>
-  <div>
-    <form
-      class="login-form"
-    >
-      <label>
-        email:
-        <input
-          placeholder="enter your email"
-          type="email"
-          value=""
-        />
-      </label>
-      <label>
-        password:
-        <input
-          placeholder="enter your password"
-          type="password"
-          value=""
-        />
-      </label>
-      <button>
-        Log In
-      </button>
-    </form>
-    <div
-      class="redirect"
-    >
-      <p>
-        New to Scrounger?
-      </p>
-      <a
-        href="/register"
-      >
-        Register
-      </a>
-    </div>
-  </div>
-   
-</div>
-`;
-
 exports[`log in should render a header a register link 1`] = `
 <div>
   <div>
