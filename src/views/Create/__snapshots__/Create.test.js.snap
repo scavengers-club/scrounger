@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create should render empty form 1`] = `
+<div>
+  <div>
+    <form
+      class="adventure-form"
+    >
+      <label>
+        name:
+        <input
+          placeholder="name"
+          required=""
+          type="text"
+          value=""
+        />
+      </label>
+      <label>
+        image:
+        <input
+          type="file"
+        />
+      </label>
+      <img />
+      <label>
+        description:
+        <textarea
+          placeholder="description"
+          required=""
+          type="text"
+        />
+      </label>
+      <label>
+        hint 1:
+        <textarea
+          placeholder="hint 1"
+          required=""
+          type="text"
+        />
+      </label>
+      <label>
+        hint 2:
+        <textarea
+          placeholder="hint 2"
+          required=""
+          type="text"
+        />
+      </label>
+      <label>
+        hint 3:
+        <textarea
+          placeholder="hint 3"
+          required=""
+          type="text"
+        />
+      </label>
+      <label>
+        solution:
+        <input
+          placeholder="solution"
+          required=""
+          type="text"
+          value=""
+        />
+      </label>
+      <button>
+        Submit
+      </button>
+    </form>
+  </div>
+   
+</div>
+`;

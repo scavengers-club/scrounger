@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Edit should render prefilled form  1`] = `
+<div>
+  <div>
+    <form
+      class="adventure-form"
+    >
+      <label>
+        name:
+        <input
+          placeholder="name"
+          required=""
+          type="text"
+          value="a place"
+        />
+      </label>
+      <label>
+        image:
+        <input
+          alt="a place"
+          type="file"
+        />
+      </label>
+      <img
+        src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/a-place/trillium.jpg"
+      />
+      <label>
+        description:
+        <textarea
+          placeholder="description"
+          required=""
+          type="text"
+        >
+          da
+        </textarea>
+      </label>
+      <label>
+        hint 1:
+        <textarea
+          placeholder="hint 1"
+          required=""
+          type="text"
+        >
+          as
+        </textarea>
+      </label>
+      <label>
+        hint 2:
+        <textarea
+          placeholder="hint 2"
+          required=""
+          type="text"
+        >
+          da
+        </textarea>
+      </label>
+      <label>
+        hint 3:
+        <textarea
+          placeholder="hint 3"
+          required=""
+          type="text"
+        >
+          da
+        </textarea>
+      </label>
+      <label>
+        solution:
+        <input
+          placeholder="solution"
+          required=""
+          type="text"
+          value="da"
+        />
+      </label>
+      <button>
+        Submit
+      </button>
+    </form>
+  </div>
+   
+</div>
+`;
