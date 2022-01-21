@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profile/> should render the users profile 1`] = `
+<div>
+  <div
+    class="profile"
+  >
+    <h1
+      class="profile-header"
+    >
+      Here are your adventures, 
+      violet
+    </h1>
+    <a
+      href="/adventure/create"
+    >
+      create new adventure
+    </a>
+    <p>
+      You have no adventures yet...
+    </p>
+    <div
+      class="adventure-list"
+    />
+  </div>
+</div>
+`;

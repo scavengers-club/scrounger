@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home/> should welcome current user 1`] = `
+<div>
+  <div>
+    <img
+      class="logo"
+      src="/example-logo.png"
+    />
+    <h3
+      class="message-box"
+    >
+      Welcome back, 
+      violet
+      !
+    </h3>
+    <div
+      class="adventure-list"
+    >
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/2"
+        >
+          <h3
+            class="list-title"
+          >
+            portland adventure
+          </h3>
+          <img
+            alt="portland adventure"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.in/storage/v1/object/public/adv-images/streetsign.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/1"
+        >
+          <h3
+            class="list-title"
+          >
+            mount hood
+          </h3>
+          <img
+            alt="mount hood"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.in/storage/v1/object/public/adv-images/trillium.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/15"
+        >
+          <h3
+            class="list-title"
+          >
+            blah
+          </h3>
+          <img
+            alt="blah"
+            class="list-img"
+            src="https://static.onecms.io/wp-content/uploads/sites/28/2021/05/06/portand-oregon-PORTLANDTG0521.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/25"
+        >
+          <h3
+            class="list-title"
+          >
+            a place
+          </h3>
+          <img
+            alt="a place"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/a-place/trillium.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/3"
+        >
+          <h3
+            class="list-title"
+          >
+            street corner
+          </h3>
+          <img
+            alt="street corner"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.in/storage/v1/object/public/adv-images/portlandcitypark.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/16"
+        >
+          <h3
+            class="list-title"
+          >
+            pdx house
+          </h3>
+          <img
+            alt="pdx house"
+            class="list-img"
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/7b/portland.jpg?w=700&h=500&s=1"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/27"
+        >
+          <h3
+            class="list-title"
+          >
+            BFOUEIWHFOIEW
+          </h3>
+          <img
+            alt="BFOUEIWHFOIEW"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/bfoueiwhfoiew/portland-oregon-weird-things-to-do-wishing-tree.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/26"
+        >
+          <h3
+            class="list-title"
+          >
+            sdfcdfaf
+          </h3>
+          <img
+            alt="sdfcdfaf"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/sdfcdfaf/portland-oregon-weird-things-to-do-mill-ends-park.jpg"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

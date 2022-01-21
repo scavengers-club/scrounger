@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AdventureList/> should render the list of adventures 1`] = `
+<div>
+  <div
+    class="adventure-list"
+  >
+    <div
+      class="adventure-card"
+    >
+      <a
+        class="list-link"
+        href="/adventure/1"
+      >
+        <h3
+          class="list-title"
+        >
+          unique adventure
+        </h3>
+        <img
+          alt="unique adventure"
+          class="list-img"
+          src="https://media.istockphoto.com/photos/sunset-in-downtown-portland-oregon-picture-id1283364803?b=1&k=20&m=1283364803&s=170667a&w=0&h=CEcB5sIBGs1GX3LhyLxgU53K7rgeP4vNsC4tWhesOAo="
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;
