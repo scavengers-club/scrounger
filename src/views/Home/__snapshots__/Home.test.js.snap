@@ -41,6 +41,25 @@ exports[`<Home/> should welcome current user 1`] = `
       >
         <a
           class="list-link"
+          href="/adventure/33"
+        >
+          <h3
+            class="list-title"
+          >
+            Mt. Hood Sunset
+          </h3>
+          <img
+            alt="Mt. Hood Sunset"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/mt.-hood-sunset/EB15ADE3-658F-4C67-817D-722E9953E38F.png"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
           href="/adventure/30"
         >
           <h3
@@ -60,17 +79,36 @@ exports[`<Home/> should welcome current user 1`] = `
       >
         <a
           class="list-link"
-          href="/adventure/28"
+          href="/adventure/15"
         >
           <h3
             class="list-title"
           >
-            Waterfront Docks
+            bridge magic
           </h3>
           <img
-            alt="Waterfront Docks"
+            alt="bridge magic"
             class="list-img"
-            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/waterfront-docks/marine drive docks.jpeg"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/bridge-magic/zoom-bridge.jpeg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/34"
+        >
+          <h3
+            class="list-title"
+          >
+            Bamboo Treehouse
+          </h3>
+          <img
+            alt="Bamboo Treehouse"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/bamboo-treehouse/IMG_0138.JPG"
           />
         </a>
       </div>
@@ -90,6 +128,25 @@ exports[`<Home/> should welcome current user 1`] = `
             alt="Portland House"
             class="list-img"
             src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/7b/portland.jpg?w=700&h=500&s=1"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/35"
+        >
+          <h3
+            class="list-title"
+          >
+            Bone-a-fide Cowboy
+          </h3>
+          <img
+            alt="Bone-a-fide Cowboy"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/bone-a-fide-cowboy/IMG_0588.JPG"
           />
         </a>
       </div>
@@ -136,6 +193,44 @@ exports[`<Home/> should welcome current user 1`] = `
       >
         <a
           class="list-link"
+          href="/adventure/36"
+        >
+          <h3
+            class="list-title"
+          >
+            A Pair of Palms
+          </h3>
+          <img
+            alt="A Pair of Palms"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/a-pair-of-palms/IMG_0580.JPG"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
+          href="/adventure/28"
+        >
+          <h3
+            class="list-title"
+          >
+            Waterfront Docks
+          </h3>
+          <img
+            alt="Waterfront Docks"
+            class="list-img"
+            src="https://kfnfolzoauwbouvhqbrv.supabase.co/storage/v1/object/public/adv-images/waterfront-docks/marine drive docks.jpeg"
+          />
+        </a>
+      </div>
+      <div
+        class="adventure-card"
+      >
+        <a
+          class="list-link"
           href="/adventure/3"
         >
           <h3
@@ -147,25 +242,6 @@ exports[`<Home/> should welcome current user 1`] = `
             alt="street corner"
             class="list-img"
             src="https://kfnfolzoauwbouvhqbrv.supabase.in/storage/v1/object/public/adv-images/portlandcitypark.jpg"
-          />
-        </a>
-      </div>
-      <div
-        class="adventure-card"
-      >
-        <a
-          class="list-link"
-          href="/adventure/15"
-        >
-          <h3
-            class="list-title"
-          >
-            bridge magic
-          </h3>
-          <img
-            alt="bridge magic"
-            class="list-img"
-            src="https://static.onecms.io/wp-content/uploads/sites/28/2021/05/06/portand-oregon-PORTLANDTG0521.jpg"
           />
         </a>
       </div>
