@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Adventure/> should render the list of adventures 1`] = `
+<div>
+  <div
+    class="adventure-detail"
+  >
+    <h3>
+      mount hood
+    </h3>
+    <img
+      alt="mount hood"
+      src="https://kfnfolzoauwbouvhqbrv.supabase.in/storage/v1/object/public/adv-images/trillium.jpg"
+    />
+    <h4>
+      Description:
+    </h4>
+    <p>
+      this adventure is for people, but also animals
+    </p>
+    <p>
+      Hint 1: 
+      hint 1
+    </p>
+    <p>
+      Hint 2: 
+      hint 2
+    </p>
+    <p>
+      Hint 3: 
+      hint 3
+    </p>
+    <h4>
+      Solution: 
+      Trillium Lake
+    </h4>
+  </div>
+</div>
+`;
