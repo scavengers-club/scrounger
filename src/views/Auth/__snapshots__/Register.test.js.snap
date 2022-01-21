@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Register will render a header and a link to log in 1`] = `
+<div>
+  <div>
+    <form
+      class="register-form"
+    >
+      <label
+        class="register-input"
+      >
+        username:
+        <input
+          placeholder="make it unique"
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        class="register-input"
+      >
+        email:
+        <input
+          placeholder="make it real"
+          type="email"
+          value=""
+        />
+      </label>
+      <label
+        class="register-input"
+      >
+        password:
+        <input
+          placeholder="make it strong"
+          type="password"
+          value=""
+        />
+      </label>
+      <fieldset>
+        <legend>
+          Avatar:
+        </legend>
+        <label>
+          <input
+            name="avatar"
+            type="radio"
+            value="westerner-hat.png"
+          />
+          <img
+            src="/avatars/westerner-hat.png"
+          />
+        </label>
+        <label>
+          <input
+            name="avatar"
+            type="radio"
+            value="safety-hat.png"
+          />
+          <img
+            src="/avatars/safety-hat.png"
+          />
+        </label>
+        <label>
+          <input
+            name="avatar"
+            type="radio"
+            value="chullo-hat.png"
+          />
+          <img
+            src="/avatars/chullo-hat.png"
+          />
+        </label>
+        <label>
+          <input
+            name="avatar"
+            type="radio"
+            value="house-hat.png"
+          />
+          <img
+            src="/avatars/house-hat.png"
+          />
+        </label>
+      </fieldset>
+      <label>
+        <input
+          type="checkbox"
+          value="false"
+        />
+        <span>
+          I am over the age of 13
+        </span>
+      </label>
+      <button
+        class="register-button"
+      >
+        Register
+      </button>
+    </form>
+    <div
+      class="redirect"
+    >
+      <p>
+        Already have an account?
+      </p>
+      <a
+        href="/login"
+      >
+        Log In
+      </a>
+    </div>
+  </div>
+</div>
+`;
